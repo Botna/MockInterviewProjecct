@@ -1,8 +1,8 @@
 'use strict';
 
 const test = require('ava');
-const sumNestedArray = require('../src/sumNestedArrays.js').sumNestedArray;
+const testMethod = require('../src/testQuestion1.js').testMethod;
 
 test('a first test', t => {
-  t.true(true);
-})
+  t.is(testMethod(), 5);
+});
