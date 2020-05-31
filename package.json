@@ -1,0 +1,30 @@
+{
+  "name": "interviewquestions",
+  "version": "0.0.1",
+  "description": "InComm interview questions",
+  "scripts": {
+    "test": "ava",
+    "sumNestedArray": "node ./helpers/runner.js 2",
+    "sumConsecutiveNumbersInArray": "node ./helpers/runner.js 1",
+    "server": "node ./src/server.js",
+    "morseCodeEncryption": "node ./helpers/runner.js 0",
+    "test-morseCodeEncryption": "ava test/morseCodeEncryption.test.js",
+    "test-sumNestedArray": "ava test/sumNestedArrays.test.js",
+    "test-sumConsecutiveNumbersInArray": "ava test/sumConsecutiveNumbersInArray.test.js",
+    "test-server": "ava test/server.tests.js"
+  },
+  "author": "Peter Finn",
+  "ava": {
+    "files": [
+      "test/*.js"
+    ]
+  },
+  "dependencies": {
+    "ava": "0.20.0",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
